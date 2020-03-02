@@ -2,6 +2,6 @@
 
 <b>Endpoints</b>
 
-GET /api/ecl - for list of ECL groups
+GET /api/eclgroups - for list of ECL groups
 
-POST /api/ecl - with selected JSON object from initial GET as body (eclGroups[n]), response will be JSON list of users they are allowed to see
+POST /api/eclgroups/:id - with selected JSON object name as id (eclGroups[n]["name"]), response will be JSON object with name and EB groups they are allowed to see
