@@ -1,17 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown';
-import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup';
 
+import '../App.css';
 
-import './App.css';
-
-
-function App() {
+function SharedLibraries() {
   return (
     <div className="mainContainer">
       <div>
@@ -19,7 +12,7 @@ function App() {
       <input className="searchBar" type="text" placeholder="All Libraries"></input>
       </div>
 
-      <ListGroup>
+      <ListGroup className="listGroup">
         <ListGroup.Item href="#link1">
           Information Centre
         </ListGroup.Item>
@@ -45,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default SharedLibraries;
